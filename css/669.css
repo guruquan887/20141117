@@ -927,7 +927,7 @@ body:nth-of-type(1) .a1d_text:hover{opacity:1;padding-left:10px;transition:all .
 .top{ width:1003px; margin:0 auto 0;}
 .zhifub{height:660px;}
 .zfb_datu_ul{height:310px; position:relative;}
-.zfb_datu_ul li{height:520px; position:absolute; top:0; left:0; z-index:10; width:100%;}
+.zfb_datu_ul li{height:460px; position:absolute; top:0; left:0; z-index:10; width:920px; margin: 0px auto;}
 .zfb_datu_ul li img{ width:1737px;}
 .datu_li1{background:url(pic/1.jpg) no-repeat;background-size:cover; background-position:100% 100%;}
 .datu_li2{background:url(pic/2.jpg) no-repeat;background-position:100% 100%;background-size:cover;}
@@ -935,7 +935,7 @@ body:nth-of-type(1) .a1d_text:hover{opacity:1;padding-left:10px;transition:all .
 .datu_li4{background:url(pic/4.jpg) no-repeat;background-position:100% 100%;background-size:cover;}
 .dian{ width:100px; margin:0 auto 0;}
 .xiaod_div{text-align:center;  position:absolute; z-index:99999999;}
-.xiaod_div span{display:inline-block;margin-right:10px;width:20px;height:20px;background:url(/images/web/ico.png) no-repeat -29px 0;cursor:pointer;}
+.xiaod_div span{display:inline-block;margin-right:10px;width:20px;height:20px;background:url(../images/web/ico.png) no-repeat -29px 0;cursor:pointer;}
 .xiaod_div .a_active{background-position:0 0;}
 #banner{width:990px;height:0;margin:0 auto;position:relative;z-index:11;}
 #bg_bno{background:#000;position:absolute;z-index:12;top:30px;right:0;}
