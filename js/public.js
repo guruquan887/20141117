@@ -1277,7 +1277,7 @@ function ByteLength(s) {
 
 
 function CheckLogin() {
-    var isLogin = "/Members/MembersHandler.ashx?action=islogined&t=" + Math.random();
+    var isLogin = "/Members/MembersHandler.ashx?action=islogined&t=" + Math.random();//获取登入者
     $.get(isLogin, function (data) {
         if (data != "0") {
             var str = data.split("|");

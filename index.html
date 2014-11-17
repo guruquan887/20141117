@@ -14,7 +14,7 @@
 <script src="js/public.js" type="text/javascript"></script>
 <script src="js/index.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/default.js"></script>
-<script type="text/javascript"> CheckLogin();</script>
+<!--<script type="text/javascript"> CheckLogin();</script> public.js中检查登入者 -->
 </head>
 <body>
 <div class="container" id="containerDiv">
@@ -129,102 +129,102 @@ $(document).WIT_SetTab({ Nav: $('#btn span'), Field: $('#img li'), Auto: true, C
 <!--用户登录-->
 <script src="Js/Ascx/Login.js" type="text/jscript"></script>
 <table align="left" class="tzy_dlk" style="display:block" id="user_nologin"> 
-<tr>
-<td colspan="2" align="left" class="padding_bottom_5"><img src="images/Web/tzy_dl_2.jpg" width="114" height="44" alt=""/></td>
-</tr>
-<tr>
-<td width="40" class="padding_10"><input name="txtLoginName" type="text" class="tzy_dlk2" id="txtLoginName" tabindex="1" value="账 号" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value=='' || this.value==this.defaultValue){this.value='';}"/></td>
-<td width="87" rowspan="2" align="left" valign="top"><input type="image" src="images/Web/tzy_an_4.jpg" tabindex="5" onclick="OnLoginSubmit(this);" id="btnLogin" /></td>
-</tr>
-<tr>
-<td class="padding_10"><input name="txtLoginPassword1" type="text" tabindex="2" class="tzy_dlk2" id="txtLoginPassword1" value="密 码" /><input name="txtLoginPassword" type="password" class="tzy_dlk2" tabindex="3" id="txtLoginPassword" value="" style="display:none;"/>
-<script type="text/javascript">
-var showPwd = $("#txtLoginPassword1"), pwd = $("#txtLoginPassword");
-showPwd.focus(function () {
-pwd.show().focus();
-showPwd.hide();
-});
-pwd.blur(function () {
-if (pwd.val() == "") {
-showPwd.show();
-pwd.hide();
-}
-}); 
-</script> 
-</td>
-</tr>
-<tr>
-<td class="padding_10" colspan="2">
-<table width="0" border="0" align="left" cellpadding="0" cellspacing="0" style=" padding-top:3px;">
-<tr>
-<td><input name="txtValidate" id="txtValidate" type="text" tabindex="4" class="tzy_dlk3" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value=='' || this.value==this.defaultValue){this.value='';}" value="验证码" /></td>
-<td>&nbsp;</td>
-<td><img src="/Public/Validate.ashx" width="56" height="20" id="imgValidate" alt="" onclick="this.src='/Public/Validate.ashx?x='+Math.random()"/></td> 
-<td><span id="spanLoading"></span></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<div id="logintable" style=" float:left;"></div>
-<table width="0" border="0" align="left" class="tzy_jz">
-<tr>
-<td><input type="checkbox" name="chbRembPassword" id="chbRembPassword"/></td>
-<td width="5"></td>
-<td class="write12">记住密码</td>
-<td width="12">&nbsp;</td>
-<td><a href="/Register.aspx" class="write12">快速注册</a></td>
-<td width="12">&nbsp;</td>
-<td><a href="/GetPassword.aspx" class="write12">找回密码</a></td>
-</tr>
-</table>
-</td>
-</tr>
+	<tr>
+		<td colspan="2" align="left" class="padding_bottom_5"><img src="images/Web/tzy_dl_2.jpg" width="114" height="44" alt=""/></td>
+	</tr>
+	<tr>
+		<td width="40" class="padding_10"><input name="txtLoginName" type="text" class="tzy_dlk2" id="txtLoginName" tabindex="1" value="账 号" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value=='' || this.value==this.defaultValue){this.value='';}"/></td>
+		<td width="87" rowspan="2" align="left" valign="top"><input type="image" src="images/Web/tzy_an_4.jpg" tabindex="5" onclick="OnLoginSubmit(this);" id="btnLogin" /></td>
+	</tr>
+	<tr>
+		<td class="padding_10"><input name="txtLoginPassword1" type="text" tabindex="2" class="tzy_dlk2" id="txtLoginPassword1" value="密 码" /><input name="txtLoginPassword" type="password" class="tzy_dlk2" tabindex="3" id="txtLoginPassword" value="" style="display:none;"/>
+		<script type="text/javascript">
+		var showPwd = $("#txtLoginPassword1"), pwd = $("#txtLoginPassword");
+		showPwd.focus(function () {
+		pwd.show().focus();
+		showPwd.hide();
+		});
+		pwd.blur(function () {
+		if (pwd.val() == "") {
+		showPwd.show();
+		pwd.hide();
+		}
+		}); 
+		</script> 
+		</td>
+	</tr>
+	<tr>
+		<td class="padding_10" colspan="2">
+			<table width="0" border="0" align="left" cellpadding="0" cellspacing="0" style=" padding-top:3px;">
+				<tr>
+					<td><input name="txtValidate" id="txtValidate" type="text" tabindex="4" class="tzy_dlk3" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value=='' || this.value==this.defaultValue){this.value='';}" value="验证码" /></td>
+					<td>&nbsp;</td>
+					<td><img src="http://www.669.com/Public/Validate.ashx" width="56" height="20" id="imgValidate" alt="" onclick="this.src='http://www.669.com/Public/Validate.ashx?x='+Math.random()"/></td> 
+					<td><span id="spanLoading"></span></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<div id="logintable" style=" float:left;"></div>
+		<table width="0" border="0" align="left" class="tzy_jz">
+		<tr>
+		<td><input type="checkbox" name="chbRembPassword" id="chbRembPassword"/></td>
+		<td width="5"></td>
+		<td class="write12">记住密码</td>
+		<td width="12">&nbsp;</td>
+		<td><a href="/Register.aspx" class="write12">快速注册</a></td>
+		<td width="12">&nbsp;</td>
+		<td><a href="/GetPassword.aspx" class="write12">找回密码</a></td>
+		</tr>
+		</table>
+		</td>
+	</tr>
 </table>
 <table width="250" align="left" class="tzy_dlk_dlh" style="display:none" id="user_logined">
-<tr>
-<td colspan="5" align="left" class="padding_bottom_5"><img src="images/web/tzy_dl_2.jpg" width="114" height="44" /></td>
-</tr>
-<tr>
-<td colspan="5" align="left" valign="top" class="padding_bottom_4">
-<table width="215" border="0" align="left" cellpadding="0" cellspacing="0" class="tzy_border2">
-<tr>
-<td width="145"><span class="huang" id="user_name">0</span><span class="huang_2">欢迎您</span></td>
-<td width="55" class="tzy_ljlj"><a href="/Members/" class="write12_2">用户中心</a></td>
-</tr>
-<tr>
-<td height="6" colspan="2"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td colspan="5" class="padding_bottom_4">
-<table width="215" border="0" cellspacing="0" cellpadding="0" class="tzy_border2">
-<tr>
-<td width="23"><img src="images/web/tzy_dlh_1.jpg" width="17" height="17" /></td>
-<td width="62" class="tzy_dlh_jb">身上金豆：<br /></td>
-<td width="130" class="tzy_dlh_jb2" id="wallet_money"></td>
-</tr>
-<tr>
-<td><img src="images/web/tzy_dlh_2.jpg" width="18" height="15" /></td>
-<td width="62" class="tzy_dlh_jb">银行金豆：<br /></td>
-<td width="130" class="tzy_dlh_jb2" id="bank_money">0</td>
-</tr>
-<tr>
-<td><img src="images/web/tzy_dlh_3.jpg" width="13" height="17" /></td>
-<td width="62" class="tzy_dlh_jb">奖券：</td>
-<td width="130" class="tzy_dlh_jb2" id="user_voucher">0</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td colspan="5" class="padding_bottom_4">
-<h3 class="tzy_an_8_2"><a href="javascript:void(0)" onclick="ExitLogin();"></a></h3>
-</td>
-</tr>
+	<tr>
+		<td colspan="5" align="left" class="padding_bottom_5"><img src="images/web/tzy_dl_2.jpg" width="114" height="44" /></td>
+	</tr>
+	<tr>
+		<td colspan="5" align="left" valign="top" class="padding_bottom_4">
+		<table width="215" border="0" align="left" cellpadding="0" cellspacing="0" class="tzy_border2">
+		<tr>
+		<td width="145"><span class="huang" id="user_name">0</span><span class="huang_2">欢迎您</span></td>
+		<td width="55" class="tzy_ljlj"><a href="/Members/" class="write12_2">用户中心</a></td>
+		</tr>
+		<tr>
+		<td height="6" colspan="2"></td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5" class="padding_bottom_4">
+		<table width="215" border="0" cellspacing="0" cellpadding="0" class="tzy_border2">
+		<tr>
+		<td width="23"><img src="images/web/tzy_dlh_1.jpg" width="17" height="17" /></td>
+		<td width="62" class="tzy_dlh_jb">身上金豆：<br /></td>
+		<td width="130" class="tzy_dlh_jb2" id="wallet_money"></td>
+		</tr>
+		<tr>
+		<td><img src="images/web/tzy_dlh_2.jpg" width="18" height="15" /></td>
+		<td width="62" class="tzy_dlh_jb">银行金豆：<br /></td>
+		<td width="130" class="tzy_dlh_jb2" id="bank_money">0</td>
+		</tr>
+		<tr>
+		<td><img src="images/web/tzy_dlh_3.jpg" width="13" height="17" /></td>
+		<td width="62" class="tzy_dlh_jb">奖券：</td>
+		<td width="130" class="tzy_dlh_jb2" id="user_voucher">0</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5" class="padding_bottom_4">
+		<h3 class="tzy_an_8_2"><a href="javascript:void(0)" onclick="ExitLogin();"></a></h3>
+		</td>
+	</tr>
 </table>
 <!--用户登录end-->
 </div>
